@@ -1,5 +1,5 @@
 $(document).ready(function () {  
-    all_notes = $("li a");  
+    all_notes = $(".ll a");  
     all_notes.on("keyup", function () {  
      note_title = $(this).find("h2").text();  
      note_content = $(this).find("p").text();  
