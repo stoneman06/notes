@@ -1,28 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-div {  
+.notes {  
  margin: 20px auto;  
- width: 70% ;  
+ width: 80% ;  
  /* font-family: 'Lato';   */
  font-family: 'Audiowide';
  padding: 20px;  
- background:#666;  
+ /* background:#666;   */
+ background-image: linear-gradient(to right, #3b3838 0%, rgb(14, 7, 7) 100%);
  color:#fff;  
  display: flex;
  text-align: center;
  word-wrap: normal;
+ text-overflow: clip;
+ border-radius: 15px;
 }  
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+}
 .heading{
+    margin: 20px auto;  
+    padding: 20px; 
+    width: 80% ;
+    border-radius: 14px;
+    /* background:#666;  */
+    background-image: linear-gradient(to right, #555454 0%, black 100%);
+    font-family: 'Audiowide'; 
+    color:#fff; 
     text-align: center;
     justify-content: center;
     /* font-family: 'Lato'; */
     font-weight: bold;
 }
-
 *{  
  margin:0;  
  padding:0;  
+ 
 }  
 
  
@@ -30,37 +48,42 @@ p {
     padding-top: 5px;
  font-size: 1rem;  
 }  
-ul,li{  
+.grid{  
  list-style:none;  
 }  
-ul{  
+.grid{  
  display: flex;  
  flex-wrap: wrap;  
  justify-content: center;  
 }  
-ul li a{  
+a{  
  text-decoration:none;  
  color:#000;  
  background:#ffc;  
  display:block;  
- height:10em;  
- width:10em;  
- overflow:auto;
+ height:200px;  
+ /* width:10em;   */
+ width: 200px;
  padding:1em;  
- box-shadow: 5px 5px 7px rgba(33,33,33,.7);  
+ box-shadow: 5px 5px 7px rgba(179, 175, 175, 0.7);  
  transition: transform .15s linear;   
+ overflow:auto;
+ border-radius: 18px;
 }  
-ul li{  
+.ll{  
  margin:1em;  
  /* top: 5px; */
  position: relative;
+ padding: 10px;
+ margin: 8px;
+ border-radius: 5px;
 }  
 
-ul li:nth-child(even) a{  
+/* ul li:nth-child(even) a{  
  background:#cfc; 
-}  
+}   */
 
-ul li a:hover,ul li a:focus{  
+a:hover, a:focus{  
  box-shadow:10px 10px 7px rgba(0,0,0,.7);  
  transform: scale(1.25);  
  position:relative;  
