@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+div {  
+ margin: 20px auto;  
+ width: 70% ;  
+ /* font-family: 'Lato';   */
+ font-family: 'Audiowide';
+ padding: 20px;  
+ background:#666;  
+ color:#fff;  
+ display: flex;
+}  
+
+*{  
+ margin:0;  
+ padding:0;  
+}  
+
+ 
+p {  
+    padding-top: 5px;
+ font-size: 1rem;  
+}  
+ul,li{  
+ list-style:none;  
+}  
+ul{  
+ display: flex;  
+ flex-wrap: wrap;  
+ justify-content: space-around;  
+}  
+ul li a{  
+ text-decoration:none;  
+ color:#000;  
+ background:#ffc;  
+ display:block;  
+ height:10em;  
+ /* width:10em;   */
+ width: auto;
+ padding:1em;  
+ box-shadow: 5px 5px 7px rgba(33,33,33,.7);  
+ transition: transform .15s linear;   
+}  
+ul li{  
+ margin:1em;  
+ /* top: 5px; */
+ position: relative;
+}  
+
+ul li:nth-child(even) a{  
+ background:#cfc; 
+}  
+
+ul li a:hover,ul li a:focus{  
+ box-shadow:10px 10px 7px rgba(0,0,0,.7);  
+ transform: scale(1.25);  
+ position:relative;  
+ z-index:5;  
+}  
